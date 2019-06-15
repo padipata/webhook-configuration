@@ -58,12 +58,15 @@ hook -p 7442     # 启动监听端口为7442的服务器
 
 * * *
 
-***注意：*** 
+#### 注意：
 
 - go build 在mac下打包在Linux下是不兼容的，需要用以下命令打包
 `env GOOS=linux GOARCH=amd64 go build -o hook hook.go`
 
-- 如果需要自己修改源码，可能会出现有些go包下载不下来，这个时候可以到 [https://github.com/golang/](https://github.com/golang/) 下面下载，然后放到自己的`GOPATH`下
+- 如果需要自己修改源码，可能会出现有些go包下载不下来
+    1. 到 [https://github.com/golang/](https://github.com/golang/) 下面下载对应的包
+    2. 放到`GOPATH`（不知道的看下面）
+        例如：`org.golang.x.sys.unix`，则需要在`/User/Mr.peng/go/src`下新建`/golang/org/x`
 
 - 如何查看自己的`GOPATH`？
 可以在安装完`go`环境后，使用`go env`命令
