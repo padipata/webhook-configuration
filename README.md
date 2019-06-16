@@ -30,7 +30,7 @@
 
 ```shell
 ./hook             # 启动服务器，-p 缺省，默认 `7442`
-hook -p 7442     # 启动监听端口为7442的服务器
+./hook -p 7442     # 启动监听端口为7442的服务器
 
 ./hook -s reload   # 重启
 ./hook -s stop     # 强行停止 SIGKILL
@@ -75,4 +75,4 @@ hook -p 7442     # 启动监听端口为7442的服务器
 
 - 配置ssh：`ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 - 复制`/etc/ssh/id_rsa.pub`内容到`coding`-> 个人设置 -> SSH公钥
-- 首次拉代码必须使用`git`协议（只需要）
+- 首次拉代码必须使用`git`协议（只需要git clone即可，服务器已配置好账号）
