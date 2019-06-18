@@ -17,7 +17,7 @@
 #### 文件说明
 
 - hook：Linux编译文件，直接运行即可
-- hook.go：源码，可修改，需要修改请查看注意事项
+- hook.go：源码，需要修改请查看 [常见问题](#常见问题)
 
 #### 支持
 
@@ -58,7 +58,7 @@
 
 * * *
 
-#### 注意：
+## 常见问题
 
 - go build 在mac下打包在Linux下是不兼容的，需要用以下命令打包
 `env GOOS=linux GOARCH=amd64 go build -o hook hook.go`
